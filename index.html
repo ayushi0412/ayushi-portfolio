@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Ayushi Srivastava — L2 Wintel & Cloud Administrator specializing in Hyper-V, Azure Arc, Automated Fleet Patching, and Hybrid Infrastructure.">
+  <meta name="keywords" content="Ayushi Srivastava, Wintel Administrator, Cloud Administrator, Azure Arc, Hyper-V, PowerShell, Ansible, AWS, AZ-104, AZ-140">
+  <title>Ayushi Srivastava | L2 Wintel & Cloud Administrator</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="glow-orb glow-orb-1" aria-hidden="true"></div>
+  <div class="glow-orb glow-orb-2" aria-hidden="true"></div>
+  <div class="glow-orb glow-orb-3" aria-hidden="true"></div>
+  <div class="cyber-grid" aria-hidden="true"></div>
+
+  <!-- Header Navigation -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Ayushi Srivastava Home">
+        <span class="logo-symbol">&lt;AS/&gt;</span>
+        <span class="logo-text">Ayushi Srivastava</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#projects" class="nav-item">Key Projects</a>
+        <a href="#terminal" class="nav-item">Terminal Demo</a>
+        <a href="#skills" class="nav-item">Skills Matrix</a>
+        <a href="#certifications" class="nav-item">Certifications</a>
+        <a href="#experience" class="nav-item">Experience</a>
+        <a href="#contact" class="nav-btn-highlight">Contact Me</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="pulse-dot"></span>
+            <span>Open to Wintel, Cloud & SRE Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Scaling Enterprise <br>
+            <span class="gradient-text">Hybrid Cloud</span> &amp; <br>
+            Wintel Systems.
+          </h1>
+
+          <p class="hero-subtitle">
+            <strong>L2 Wintel &amp; Cloud Administrator</strong> at HCLTech managing <strong>2,000+ servers</strong> across on-prem and hybrid environments. Proven record in reducing fleet patching cycles from 2 days to 8 hours, migrating 700+ VMs to Hyper-V, and orchestrating Azure Arc hybrid integration.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get In Touch</span>
+            </a>
+            <button class="btn btn-ghost copy-email-btn" data-email="ayushi.sri1009@gmail.com" id="copyEmailQuick">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>Copy Email</span>
+            </button>
+          </div>
+
+          <div class="hero-cert-pills">
+            <span class="cert-pill">AZ-104 Associate</span>
+            <span class="cert-pill">AZ-140 AVD</span>
+            <span class="cert-pill">AWS Solutions Architect</span>
+            <span class="cert-pill">AWS Cloud Practitioner</span>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="avatar-card glass-panel">
+            <div class="avatar-frame">
+              <img src="assets/avatar.jpg" alt="Ayushi Srivastava 3D Avatar in Cloud Data Center" class="avatar-image">
+              <div class="avatar-overlay-gradient"></div>
+            </div>
+            
+            <div class="floating-metric metric-1">
+              <div class="metric-icon azure-icon">☁️</div>
+              <div class="metric-info">
+                <span class="metric-val">Azure Arc</span>
+                <span class="metric-label">100+ Onboarded Nodes</span>
+              </div>
+            </div>
+
+            <div class="floating-metric metric-2">
+              <div class="metric-icon cluster-icon">⚡</div>
+              <div class="metric-info">
+                <span class="metric-val">N-0.5%</span>
+                <span class="metric-label">Patch Compliance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Counter Row -->
+      <div class="container">
+        <div class="stats-counter-strip glass-panel">
+          <div class="stat-box">
+            <span class="stat-number" data-target="2000">0</span><span class="stat-suffix">+</span>
+            <span class="stat-desc">Servers Managed (On-Prem + Cloud)</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-box">
+            <span class="stat-number" data-target="83">0</span><span class="stat-suffix">%</span>
+            <span class="stat-desc">Patch Window Reduced (48h → 8h)</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-box">
+            <span class="stat-number" data-target="700">0</span><span class="stat-suffix">+</span>
+            <span class="stat-desc">VMs Migrated (VMware → Hyper-V)</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-box">
+            <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+            <span class="stat-desc">SLA Met on P1/P2 Critical Incidents</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section-padding" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">ENGINEER PROFILE</span>
+          <h2 class="section-title">Architecting Resilient Infrastructure &amp; Hybrid Clouds</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-panel main-bio">
+            <h3>Bridging Data Center Reliability with Cloud Agility</h3>
+            <p>
+              I am an <strong>L2 Wintel &amp; Cloud Administrator</strong> at HCLTech supporting the global <strong>Ericsson account</strong>. Over the past 3+ years, I have engineered reliable operational runbooks, managed complex high-availability clusters, and spearheaded automation pipelines that eliminated hundreds of hours of manual infrastructure toil.
+            </p>
+            <p>
+              My expertise spans <strong>Hyper-V setup and clustering (S2D &amp; MTI)</strong>, physical servers, Failover Clustering, Network Load Balancing (NLB), and hybrid monitoring with <strong>Azure Arc</strong> and <strong>SCVMM</strong>.
+            </p>
+            <div class="about-highlights-list">
+              <div class="highlight-item">
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Multi-Cloud Administration:</strong> Certified across Microsoft Azure and AWS with hands-on multi-platform management.
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Zero-Downtime Operations:</strong> Maintained an unblemished record of zero unplanned downtime during in-place OS fleet upgrades and patching cycles.
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Modern Automation Mindset:</strong> Combining PowerShell, Ansible, and modern DevOps tools (Docker, Kubernetes, Terraform) to streamline enterprise operations.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card glass-panel current-focus">
+            <h3>Specialized Focus Areas</h3>
+            <div class="focus-stack">
+              <div class="focus-tile">
+                <div class="focus-header">
+                  <span class="focus-icon">🛡️</span>
+                  <h4>Automated Patching Pipelines</h4>
+                </div>
+                <p>PowerShell + Ansible + Azure Arc engine targeting 2,000+ servers with automated reboot schedules and validation.</p>
+              </div>
+
+              <div class="focus-tile">
+                <div class="focus-header">
+                  <span class="focus-icon">🔄</span>
+                  <h4>Cross-Hypervisor Migrations</h4>
+                </div>
+                <p>Migrated 700+ production workloads from VMware ESXi to Hyper-V using Zerto with zero customer impact.</p>
+              </div>
+
+              <div class="focus-tile">
+                <div class="focus-header">
+                  <span class="focus-icon">🌐</span>
+                  <h4>Azure Arc Hybrid Bridge</h4>
+                </div>
+                <p>Extending cloud control plane, monitoring, and compliance governance to legacy on-premises servers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Featured Projects -->
+    <section class="section-padding bg-darker" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">PROVEN IMPACT</span>
+          <h2 class="section-title">Featured Enterprise Projects</h2>
+          <p class="section-subtitle">Real-world production transformations delivered for global enterprise infrastructure.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card glass-panel" id="proj-patching">
+            <div class="project-header-bar">
+              <div class="project-meta">PowerShell · Ansible · Azure Arc · Windows Server</div>
+              <span class="project-badge impact-badge">83% Time Reduction</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Enterprise Automated Patching Pipeline</h3>
+              <p class="project-desc">
+                Architected and deployed an automated patch orchestration pipeline across 2,000+ physical and virtual servers. Replaced high-risk 48-hour weekend manual maintenance routines with scripted Ansible workflows and Azure Arc patch policies.
+              </p>
+              <div class="project-metrics-grid">
+                <div class="p-metric">
+                  <span class="p-metric-val">48h → 8h</span>
+                  <span class="p-metric-lbl">Patch Execution Window</span>
+                </div>
+                <div class="p-metric">
+                  <span class="p-metric-val">N-0.5%</span>
+                  <span class="p-metric-lbl">Sustained Compliance</span>
+                </div>
+                <div class="p-metric">
+                  <span class="p-metric-val">0</span>
+                  <span class="p-metric-lbl">Unplanned Downtime</span>
+                </div>
+              </div>
+              <ul class="project-bullets">
+                <li>Pre-flight health checks and automatic disk space clearing on Windows C: drives.</li>
+                <li>Fleet-wide vulnerability scanning and automated remediation reports via Nessus Agent.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card glass-panel" id="proj-migration">
+            <div class="project-header-bar">
+              <div class="project-meta">Zerto · VMware ESXi · Hyper-V · SCVMM</div>
+              <span class="project-badge success-badge">700+ VMs Migrated</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">VMware to Hyper-V Migration (PCOP Environment)</h3>
+              <p class="project-desc">
+                Led technical execution for the migration of 700+ virtual machines from legacy VMware clusters to modern Microsoft Hyper-V infrastructure utilizing Zerto Migration Tool.
+              </p>
+              <div class="project-metrics-grid">
+                <div class="p-metric">
+                  <span class="p-metric-val">700+</span>
+                  <span class="p-metric-lbl">Virtual Machines Migrated</span>
+                </div>
+                <div class="p-metric">
+                  <span class="p-metric-val">Substantial</span>
+                  <span class="p-metric-lbl">Cost Savings Realized</span>
+                </div>
+              </div>
+              <ul class="project-bullets">
+                <li>Configured replication pairs and failover testing environments without service disruption.</li>
+                <li>Validated network mappings, NIC teaming, and storage volume bindings post-cutover.</li>
+                <li>Authored standard operating procedures (SOPs) adopted by the infrastructure division.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card glass-panel" id="proj-arc">
+            <div class="project-header-bar">
+              <div class="project-meta">Azure Arc · Azure Monitor · SCVMM · Hybrid Governance</div>
+              <span class="project-badge hybrid-badge">Hybrid Cloud Governance</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Azure Arc Hybrid Integration &amp; SCVMM Bridge</h3>
+              <p class="project-desc">
+                Connected on-premises datacenter resources to Microsoft Azure by onboarding 100+ legacy bare-metal and virtual servers to Azure Arc, unlocking centralized management without replatforming.
+              </p>
+              <div class="project-metrics-grid">
+                <div class="p-metric">
+                  <span class="p-metric-val">100+</span>
+                  <span class="p-metric-lbl">Legacy Hosts Connected</span>
+                </div>
+                <div class="p-metric">
+                  <span class="p-metric-val">Unified</span>
+                  <span class="p-metric-lbl">Single Pane of Glass</span>
+                </div>
+                <div class="p-metric">
+                  <span class="p-metric-val">100%</span>
+                  <span class="p-metric-lbl">Policy Enforcement</span>
+                </div>
+              </div>
+              <ul class="project-bullets">
+                <li>Established secure Arc-SCVMM gateway connections across enterprise firewalls.</li>
+                <li>Applied Azure Governance Policies and Azure Monitor log forwarding fleet-wide.</li>
+                <li>Enabled seamless self-service operations and automated guest patch tracking.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card glass-panel" id="proj-gold">
+            <div class="project-header-bar">
+              <div class="project-meta">Windows Server 2025 · VHDX · Golden Image · S2D</div>
+              <span class="project-badge os-badge">Fleet Modernization</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Golden Image VHDX &amp; Server OS Upgrades</h3>
+              <p class="project-desc">
+                Engineered standardized, hardened Golden Image VHDX templates for consistent bare-metal and Hyper-V deployments, accelerating server provisioning while eliminating configuration drift.
+              </p>
+              <div class="project-metrics-grid">
+                <div class="p-metric">
+                  <span class="p-metric-val">WS 2016→2025</span>
+                  <span class="p-metric-lbl">In-Place Lifecycle Upgrade</span>
+                </div>
+                <div class="p-metric">
+                  <span class="p-metric-val">70%</span>
+                  <span class="p-metric-lbl">Faster Provisioning</span>
+                </div>
+                <div class="p-metric">
+                  <span class="p-metric-val">SOX &amp; CIS</span>
+                  <span class="p-metric-lbl">Baseline Compliance</span>
+                </div>
+              </div>
+              <ul class="project-bullets">
+                <li>Pre-baked enterprise monitoring agents, security baselines, and domain-join automation.</li>
+                <li>Designed Storage Spaces Direct (S2D) and Cluster Shared Volumes (CSV) resilience tests.</li>
+                <li>Performed end-to-end OS upgrade verifications across tier-1 mission critical services.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Terminal Simulator Section -->
+    <section class="section-padding" id="terminal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">LIVE TERMINAL SIMULATOR</span>
+          <h2 class="section-title">Inspect Ayushi's Automation Tooling</h2>
+          <p class="section-subtitle">Click the tabs below to run interactive operational scripts and see how tasks are automated.</p>
+        </div>
+
+        <div class="terminal-container glass-panel">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="terminal-title">PowerShell Core v7.4 — Hybrid Infrastructure Console</div>
+            <div class="terminal-actions">
+              <button class="terminal-tab-btn active" data-script="patching">patch-fleet.ps1</button>
+              <button class="terminal-tab-btn" data-script="arc">check-arc-sync.ps1</button>
+              <button class="terminal-tab-btn" data-script="cluster">test-cluster-csv.ps1</button>
+            </div>
+          </div>
+          
+          <div class="terminal-body" id="terminalOutput">
+            <!-- Simulated console text injected via JS -->
+          </div>
+
+          <div class="terminal-footer">
+            <span class="terminal-status-light"></span>
+            <span id="terminalStatusText">Script executed successfully • Return code 0</span>
+            <button class="terminal-rerun-btn" id="rerunTerminalBtn">▶ Re-run Script</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Matrix Section with Interactive Filters -->
+    <section class="section-padding bg-darker" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">TECHNICAL ARSENAL</span>
+          <h2 class="section-title">Comprehensive Skills Matrix</h2>
+          <p class="section-subtitle">Categorized competencies backed by 3+ years of production operations and cloud certifications.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="skill-filters" id="skillFilters">
+          <button class="filter-btn active" data-category="all">All Skills</button>
+          <button class="filter-btn" data-category="cloud">Cloud &amp; Hybrid</button>
+          <button class="filter-btn" data-category="virtualization">Virtualization &amp; Clustering</button>
+          <button class="filter-btn" data-category="automation">Automation &amp; Scripting</button>
+          <button class="filter-btn" data-category="os">OS &amp; Infrastructure</button>
+          <button class="filter-btn" data-category="devops">DevOps &amp; Tools</button>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Cloud & Hybrid -->
+          <div class="skill-card glass-panel" data-category="cloud">
+            <div class="skill-badge-header">
+              <span class="skill-icon">☁️</span>
+              <span class="skill-level">Core Strength</span>
+            </div>
+            <h4>Microsoft Azure</h4>
+            <p>Azure Arc, Azure Patch Manager, Azure Virtual Desktop (AVD), Azure Monitor, Log Analytics.</p>
+            <div class="skill-tags">
+              <span>AZ-104</span>
+              <span>AZ-140</span>
+              <span>AZ-900</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="cloud">
+            <div class="skill-badge-header">
+              <span class="skill-icon">🌐</span>
+              <span class="skill-level">Certified</span>
+            </div>
+            <h4>Amazon Web Services (AWS)</h4>
+            <p>EC2, AMI Management, EBS Snapshots, AWS Systems Manager (SSM) Patching, CloudWatch.</p>
+            <div class="skill-tags">
+              <span>AWS SAA</span>
+              <span>CLF-C02</span>
+            </div>
+          </div>
+
+          <!-- Virtualization -->
+          <div class="skill-card glass-panel" data-category="virtualization">
+            <div class="skill-badge-header">
+              <span class="skill-icon">🖥️</span>
+              <span class="skill-level">Expert</span>
+            </div>
+            <h4>Microsoft Hyper-V</h4>
+            <p>Hyper-V Host setup, Storage Spaces Direct (S2D), MTI configurations, SCVMM management, VHDX templates.</p>
+            <div class="skill-tags">
+              <span>S2D</span>
+              <span>MTI</span>
+              <span>SCVMM</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="virtualization">
+            <div class="skill-badge-header">
+              <span class="skill-icon">🖧</span>
+              <span class="skill-level">Expert</span>
+            </div>
+            <h4>Failover Clustering &amp; NLB</h4>
+            <p>Multi-node Windows Failover Clusters, Cluster Shared Volumes (CSV), Network Load Balancing, NIC Teaming.</p>
+            <div class="skill-tags">
+              <span>CSV</span>
+              <span>High-Availability</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="virtualization">
+            <div class="skill-badge-header">
+              <span class="skill-icon">🔄</span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <h4>VMware ESXi &amp; Zerto</h4>
+            <p>vCenter cluster administration, cross-hypervisor VM migration, Disaster Recovery planning.</p>
+            <div class="skill-tags">
+              <span>vCenter</span>
+              <span>Zerto Migrations</span>
+            </div>
+          </div>
+
+          <!-- Automation -->
+          <div class="skill-card glass-panel" data-category="automation">
+            <div class="skill-badge-header">
+              <span class="skill-icon">⚡</span>
+              <span class="skill-level">Production</span>
+            </div>
+            <h4>PowerShell Scripting</h4>
+            <p>Wintel task automation, drive mapping, SFTP administration, automated patch deployment scripts.</p>
+            <div class="skill-tags">
+              <span>PS Core</span>
+              <span>Runbooks</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="automation">
+            <div class="skill-badge-header">
+              <span class="skill-icon">📜</span>
+              <span class="skill-level">Production</span>
+            </div>
+            <h4>Ansible Pipelines</h4>
+            <p>Fleet-wide playbooks for config management, automated patching sequences, and compliance verification.</p>
+            <div class="skill-tags">
+              <span>Playbooks</span>
+              <span>Automation</span>
+            </div>
+          </div>
+
+          <!-- OS & Infrastructure -->
+          <div class="skill-card glass-panel" data-category="os">
+            <div class="skill-badge-header">
+              <span class="skill-icon">🪟</span>
+              <span class="skill-level">Deep Specialization</span>
+            </div>
+            <h4>Windows Server Fleet</h4>
+            <p>Windows Server 2016, 2019, 2022, 2025 in-place upgrades, domain joins, Active Directory, DNS/DHCP.</p>
+            <div class="skill-tags">
+              <span>2016-2025</span>
+              <span>Active Directory</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="os">
+            <div class="skill-badge-header">
+              <span class="skill-icon">🐧</span>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <h4>Unix &amp; Linux Administration</h4>
+            <p>LVM filesystem expansion (/var, root), storage troubleshooting, process management, shell scripting.</p>
+            <div class="skill-tags">
+              <span>RHEL</span>
+              <span>Storage/LVM</span>
+            </div>
+          </div>
+
+          <!-- DevOps -->
+          <div class="skill-card glass-panel" data-category="devops">
+            <div class="skill-badge-header">
+              <span class="skill-icon">🐳</span>
+              <span class="skill-level">Active Upskilling</span>
+            </div>
+            <h4>DevOps Tools &amp; Containers</h4>
+            <p>Docker containerization, Kubernetes fundamentals, Terraform Infrastructure-as-Code, Jenkins CI/CD.</p>
+            <div class="skill-tags">
+              <span>Docker</span>
+              <span>K8s</span>
+              <span>Terraform</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="devops">
+            <div class="skill-badge-header">
+              <span class="skill-icon">🔍</span>
+              <span class="skill-level">Enterprise Tools</span>
+            </div>
+            <h4>Monitoring &amp; ITSM</h4>
+            <p>BMC Remedy/ITSM, Nessus Agent, AIOps, BHOM, BHCO, Azure Monitor, SOX Compliance reporting.</p>
+            <div class="skill-tags">
+              <span>AIOps</span>
+              <span>SOX Ready</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Certifications Showcase -->
+    <section class="section-padding" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">CREDENTIALS</span>
+          <h2 class="section-title">5 Industry Cloud Certifications</h2>
+          <p class="section-subtitle">Independently verified certifications covering Microsoft Azure and Amazon Web Services ecosystems.</p>
+        </div>
+
+        <div class="certs-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-badge-logo azure-logo">AZ</div>
+            <div class="cert-info">
+              <span class="cert-issuer">Microsoft Certified</span>
+              <h3 class="cert-name">Azure Administrator Associate</h3>
+              <span class="cert-code">Exam AZ-104</span>
+              <p class="cert-summary">Validates skills in implementing, managing, and monitoring identity, governance, storage, compute, and virtual networks in Microsoft Azure.</p>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-badge-logo azure-logo">AVD</div>
+            <div class="cert-info">
+              <span class="cert-issuer">Microsoft Certified</span>
+              <h3 class="cert-name">Azure Virtual Desktop Specialty</h3>
+              <span class="cert-code">Exam AZ-140</span>
+              <p class="cert-summary">Validates expertise in designing, implementing, managing, and maintaining virtual desktop experiences and remote apps on Azure.</p>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-badge-logo aws-logo">AWS</div>
+            <div class="cert-info">
+              <span class="cert-issuer">Amazon Web Services</span>
+              <h3 class="cert-name">AWS Solutions Architect – Associate</h3>
+              <span class="cert-code">Exam SAA-C03</span>
+              <p class="cert-summary">Demonstrates comprehensive knowledge of designing secure, robust, and cost-effective cloud architectures on AWS services.</p>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-badge-logo azure-logo">900</div>
+            <div class="cert-info">
+              <span class="cert-issuer">Microsoft Certified</span>
+              <h3 class="cert-name">Azure Fundamentals</h3>
+              <span class="cert-code">Exam AZ-900</span>
+              <p class="cert-summary">Foundational proficiency in cloud concepts, Azure security, compliance, privacy, pricing, and service lifecycle.</p>
+            </div>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-badge-logo aws-logo">CLF</div>
+            <div class="cert-info">
+              <span class="cert-issuer">Amazon Web Services</span>
+              <h3 class="cert-name">AWS Cloud Practitioner</h3>
+              <span class="cert-code">Exam CLF-C02</span>
+              <p class="cert-summary">Fundamental understanding of the AWS Cloud, security, architecture, billing, and core computing services.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Experience Timeline -->
+    <section class="section-padding bg-darker" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">CAREER MILESTONES</span>
+          <h2 class="section-title">Work Experience &amp; Education</h2>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">L2 Wintel &amp; Cloud Administrator <span class="role-promoted-tag">Promoted</span></h3>
+                  <div class="timeline-company">HCLTech — Ericsson Account</div>
+                </div>
+                <div class="timeline-time">Jan 2025 — Present</div>
+              </div>
+              <p class="timeline-summary">
+                Directing operational administration for 2,000+ physical and virtual servers across on-premises Hyper-V/VMware clusters and multi-cloud environments.
+              </p>
+              <ul class="timeline-list">
+                <li>Designed automated patching pipeline (PowerShell + Ansible + Azure Arc) slashing patch duration from 2 days to 8 hours.</li>
+                <li>Built enterprise Hyper-V environments with Storage Spaces Direct (S2D), Failover Clustering, and NIC Teaming.</li>
+                <li>Managed technical migration of 700+ VMs to Hyper-V using Zerto with zero unplanned downtime.</li>
+                <li>Onboarded 100+ servers to Azure Arc for unified hybrid management, policy enforcement, and compliance reporting.</li>
+                <li>Managed L2 critical incident response (P1/P2, Cluster Shared Volumes) with 100% SLA compliance.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">L1 Command Center Engineer <span class="role-tag">GET - Analyst</span></h3>
+                  <div class="timeline-company">HCLTech — Ericsson Account</div>
+                </div>
+                <div class="timeline-time">Nov 2023 — 2025</div>
+              </div>
+              <p class="timeline-summary">
+                Delivered 24/7 proactive infrastructure monitoring, cloud patching execution, and first-line incident resolution for a global server estate.
+              </p>
+              <ul class="timeline-list">
+                <li>Executed scheduled OS patching and post-patch validation across Azure VMs (Update Manager) and AWS EC2 instances (SSM).</li>
+                <li>Conducted 24/7 monitoring across Windows, Unix, and cloud servers using BMC ITSM, AIOps, BHOM, and BHCO.</li>
+                <li>Remediated L1 issues within defined SLAs and documented detailed Root Cause Analyses (RCA) for escalations.</li>
+                <li>Managed storage utilization on Windows C: drives and expanded Unix /var and root filesystems to prevent outages.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 (Education) -->
+          <div class="timeline-item">
+            <div class="timeline-dot dot-edu"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">B.Tech in Computer Science &amp; Engineering</h3>
+                  <div class="timeline-company">United College of Engineering and Research (UCER)</div>
+                </div>
+                <div class="timeline-time">2019 — 2023</div>
+              </div>
+              <p class="timeline-summary">
+                Prayagraj, Uttar Pradesh, India. Focused on Operating Systems, Computer Networks, Distributed Computing, and Cloud Infrastructure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Hire Me Section -->
+    <section class="section-padding" id="contact">
+      <div class="container">
+        <div class="contact-box glass-panel">
+          <div class="contact-grid">
+            <div class="contact-text">
+              <span class="section-tag">LET'S CONNECT</span>
+              <h2 class="contact-title">Ready to elevate your infrastructure reliability?</h2>
+              <p class="contact-desc">
+                I am actively seeking roles where I can leverage my experience in Wintel administration, Hyper-V clustering, Azure Arc hybrid solutions, and automated patch engineering.
+              </p>
+
+              <div class="contact-methods">
+                <div class="contact-item">
+                  <div class="contact-icon">📧</div>
+                  <div>
+                    <span class="contact-lbl">Email Address</span>
+                    <a href="mailto:ayushi.sri1009@gmail.com" class="contact-val">ayushi.sri1009@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">📱</div>
+                  <div>
+                    <span class="contact-lbl">Phone Number</span>
+                    <a href="tel:+917080232033" class="contact-val">+91 7080232033</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">📍</div>
+                  <div>
+                    <span class="contact-lbl">Current Location</span>
+                    <span class="contact-val">Prayagraj, Uttar Pradesh, India (Open to Relocation / Hybrid)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-cta-row">
+                <a href="mailto:ayushi.sri1009@gmail.com?subject=Job%20Opportunity%20-%20Cloud%20%26%20Wintel%20Administrator" class="btn btn-primary">
+                  <span>Send Direct Email</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <button class="btn btn-secondary copy-email-btn" data-email="ayushi.sri1009@gmail.com">
+                  <span>Copy Email to Clipboard</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Interactive Direct Message Card -->
+            <div class="quick-inquiry-card">
+              <h3>Quick Interview / Inquiry Request</h3>
+              <form id="inquiryForm" onsubmit="event.preventDefault(); window.handleInquirySubmit();">
+                <div class="form-group">
+                  <label for="inquirerName">Your Name / Organization</label>
+                  <input type="text" id="inquirerName" placeholder="e.g. Talent Acquisition Team" required>
+                </div>
+                <div class="form-group">
+                  <label for="inquirerEmail">Your Work Email</label>
+                  <input type="email" id="inquirerEmail" placeholder="e.g. recruiter@company.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="roleInterest">Role or Opportunity</label>
+                  <select id="roleInterest">
+                    <option value="Wintel / Windows Server Administrator">Wintel / Windows Server Administrator</option>
+                    <option value="Cloud / Azure Infrastructure Engineer">Cloud / Azure Infrastructure Engineer</option>
+                    <option value="Hybrid Cloud & SRE Administrator">Hybrid Cloud &amp; SRE Administrator</option>
+                    <option value="Other Technical Inquiry">Other Technical Inquiry</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="inquiryMessage">Brief Message or Job Description Link</label>
+                  <textarea id="inquiryMessage" rows="3" placeholder="Tell me about the role or team requirements..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary full-width">
+                  <span>Generate Email Draft</span>
+                </button>
+              </form>
+              <div id="formSuccessMessage" class="form-success-banner" style="display: none;">
+                ✓ Opening your email client with the pre-filled message...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="logo-symbol">&lt;AS/&gt;</span>
+        <span>© 2026 Ayushi Srivastava. Built for Enterprise Cloud &amp; Systems Engineering.</span>
+      </div>
+      <div class="footer-right">
+        <a href="#hero">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast for Copy Actions -->
+  <div id="toastNotification" class="toast-notification">Email copied to clipboard!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
